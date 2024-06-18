@@ -6,18 +6,18 @@ peso = float(input("Qual seu peso? Utilize ponto para casas decimais: "))
 altura = float(input("Qual sua altura? Utilize ponto para casas decimais: "))
 
 # Calculo IMC
-imc = peso / (altura**2)
+imc = round (peso / (altura**2),2)
 
 # Determina a classificação com base no IMC calculado
 if imc < 18.5:
-    classificacao = "Magresa"
-elif 18.5 <= imc <= 24.9:
+    classificacao = "Magra"
+elif imc <= 24.9:
     classificacao = "Normal"
-elif 25.0 <= imc <= 29.9:
+elif imc >= 29.9:
     classificacao = "Sobrepeso"
-elif 30.0 <= imc <= 39.9:
+elif imc >= 39.9:
     classificacao = "Obesidade"
 else:
     classificacao = "Obesidade grave"
 
-print("Oi,"+ nome +"! Sua classificação é de " + classificacao + ".")
+print("Oi,", nome,"! Sua classificação é", classificacao,".")

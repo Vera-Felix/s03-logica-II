@@ -1,13 +1,11 @@
 # Pergunta inicial para obter a temperatura em graus Celsius
-temperatura_celsius = float(input("Qual a temperatura atual em graus Celsius? "))
+print ("Análise do Tempo")
+temperatura = float(input("Qual a temperatura atual em graus Celsius? "))
 
 # Determinação da classificação do dia com base na temperatura
-if temperatura_celsius > 27:
-    classificacao = "dia quente"
-elif 20 <= temperatura_celsius <= 27:
-    classificacao = "dia agradável"
+if temperatura > 27:
+    print("Dia Quente")
+elif temperatura > 15:
+    print("Dia Agradável")
 else:
-    classificacao = "dia frio"
-
-# Exibição do resultado
-print(f"Com {temperatura_celsius:.1f} graus Celsius, hoje está classificado como {classificacao}.")
+    print("Dia Frio")

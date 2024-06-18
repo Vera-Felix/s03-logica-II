@@ -18,6 +18,3 @@ if velocidade_veiculo > velocidade_maxima:
         print("Você ultrapasou a velocidade máxima da via em 30%. Sua multa é de R$ 350,00")
 else:
     print("Você está dentro da velocidade permitida. Continue dirigindo com segurança.")
-
-
-
